@@ -1,5 +1,8 @@
 "use client";
 import Brain from "../components/brain";
+import { useInView } from 'react-intersection-observer'; // useInView
+import { useScroll, motion } from 'framer-motion'; // useScroll, motion
+
 
 import { useRef } from "react";
 
@@ -34,17 +37,9 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BİZ KİMİZ ?</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            Eva Smile Oturum ve Danışmanlık
+            <p>Eva Smile Oturum ve Dan&#305;&#351;manl&#305;k olarak, uzun y&#305;llard&#305;r sekt&#246;rde edindi&#11;imiz tecr&#252;be ve g&#252;venle b&#252;y&#252;k &#246;l&#231;eli firmalara ve bireysel m&#252;&#351;terilere profesyonel dan&#305;&#351;manl&#305;k h&#305;zmetleri sunuyoruz.
+</p>
 
-Eva Smile Oturum ve Danışmanlık olarak, uzun yıllardır sektörde edindiğimiz tecrübe ve güvenle büyük ölçekli firmalara ve bireysel müşterilere profesyonel danışmanlık hizmetleri sunuyoruz. Müşteri memnuniyetini her zaman ön planda tutarak, ihtiyaçlara özel çözümler geliştiriyor ve her adımda rehberlik sağlıyoruz.
-
-Hizmet yelpazemiz, bireyler için oturum izinleri, çalışma izinleri, vatandaşlık işlemleri ve kişiye özel danışmanlık hizmetlerinden, büyük firmalar için hukuki süreç yönetimi, resmi prosedürlerde destek ve iş dünyasında danışmanlık hizmetlerine kadar geniş bir alanı kapsamaktadır.
-
-Sektörde fark yaratan özelliğimiz, her müşterimize özel olarak geliştirdiğimiz çözümler ve uzman ekibimizin rehberliğiyle süreçleri hızlı ve güvenilir bir şekilde sonuçlandırmamızdır. Amacımız, müşterilerimizin en karmaşık resmi ve hukuki süreçlerde bile güvenle ilerlemesini sağlamak ve onların yanında güçlü bir çözüm ortağı olmaktır.
-
-Eva Smile Oturum ve Danışmanlık olarak, yıllardır sürdürdüğümüz başarı yolculuğumuza sizinle birlikte devam etmekten mutluluk duyarız.
-
-Güvenilir rehberiniz, Eva Smile.
             </p>
             {/* BIOGRAPHY QUOTE */}
             
@@ -83,7 +78,8 @@ Güvenilir rehberiniz, Eva Smile.
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              HİZMETLERIMİZ
+              H&#304;ZMETLER&#304;M&#304;Z
+
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
@@ -92,16 +88,24 @@ Güvenilir rehberiniz, Eva Smile.
               className="flex gap-4 flex-wrap"
             >
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Şirket açılış işlemleri
+               <p>
+               S&#351;irket a&#231;&#305;l&#305;&#351; i&#351;lemleri  
+               </p>
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Oturum işlemleri
+                <p> 
+                Oturum i&#351;lemleri 
+                </p>
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Çalışma izni
+               <p>
+               &#199;al&#305;&#351;ma izni 
+               </p>
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Evrak tercümesi
+              <p>
+              Evrak terc&#252;mesi  
+              </p>
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Rehberlik
@@ -163,8 +167,11 @@ Güvenilir rehberiniz, Eva Smile.
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                   Makedonya'da otoyol projesi için çalışmakta olan Türk-Amerikan Ortak yapımı olacak projenin Oturum ve Danışmanlık Hizmetini üstlenmekteyiz{" "}
-                  </div>
+                  <p>
+                    
+                  Makedonya&#39;da otoyol projesi i&#231;in &#231;al&#305;&#351;makta olan T&#252;rk-Amerikan Ortak yap&#305;m&#305; olacak projenin Oturum ve Dan&#305;&#351;manl&#305;k Hizmetini &#252;stlenmekteyiz.
+                  </p>
+ </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2024 
@@ -203,11 +210,11 @@ Güvenilir rehberiniz, Eva Smile.
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Makedonya'da tren yolu için çalışmalarınız sürdüren Türk firması için Oturum ve Danışmanlık Hizmetini üstlenmekteyiz {" "}
+                  Makedonya&#39;da tren yolu i&#231;in &#231;al&#305;&#351;malar&#305;n&#305;z s&#252;rd&#252;ren T&#252;rk firmas&#305; i&#231;in Oturum ve Dan&#305;&#351;manl&#305;k Hizmetini &#252;stlenmekteyiz.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2023 - Günümüz{" "}
+                    2023 - G&#252;n&#252;m&#252;z{" "}
                   </div>
                   {/* JOB COMPANY */}
                 
@@ -223,7 +230,7 @@ Güvenilir rehberiniz, Eva Smile.
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    Üsküp'te Tamamlanmış olan Limak diamond Projesinde Oturum işlerini üstlenmekteyiz{" "}
+                  &#220;sk&#252;p&#39;te Tamamlanm&#305;&#351; olan Limak diamond Projesinde Oturum i&#351;lerini &#252;stlenmekteyiz.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">

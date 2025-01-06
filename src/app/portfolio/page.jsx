@@ -80,7 +80,8 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-xl">Makedonya'da danismanliga mi ihtiyaciniz var ?</h1>
+        <h1 className="text-xl">Makedonya&#39;da dan&#305;&#351;manl&#305;&#287;a m&#305; ihtiyac&#305;n&#305;z var?
+</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -96,7 +97,8 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Eva smile Danismanlik
+              Eva Smile Dan&#305;&#351;manl&#305;k
+
               </textPath>
             </text>
           </motion.svg>
@@ -104,7 +106,8 @@ const PortfolioPage = () => {
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
-            Bize ulasin
+            Bize ula&#351;&#305;n
+
           </Link>
         </div>
       </div>
